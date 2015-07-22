@@ -1,0 +1,48 @@
+\documentclass[landscape]{article}
+\usepackage{multirow}
+\usepackage{geometry}
+\geometry{a4paper, lmargin=1cm, rmargin=1cm}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}	
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}	
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}	
+\begin{document}
+	
+	
+	
+Fits/Mutant \\
+{
+\begin{tabular}{ l || r r | r r | r r | r r| r r | r r}
+$\Delta$F vs. $\Delta \tilde \nu$ & \multicolumn{2}{|C{2cm}}{AMOEBA} & \multicolumn{2}{|C{2cm}}{AMOEBA CP} & \multicolumn{2}{|C{2cm}}{AMOEBA CPf} & \multicolumn{2}{|C{2cm}}{AMOEBA Explicit Water} & \multicolumn{2}{|C{2cm}}{AMOEBA Explicit Water CP} & \multicolumn{2}{|C{2cm}}{AMOEBA Explicit Water CPf} \\
+ & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR}  & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} \\
+\hline\hline	
+Rap E30/K31    & -0.469         & -5.002         & -0.467         & -5.063         & -0.469         & -5.002         & 0.840          & 3.913          & 0.834          & 4.021          & 0.838          & 3.918         \\
+Rap E30/K31E   & -0.019         & -0.068         & 0.028          & 0.097          & -0.016         & -0.057         & 0.283          & 0.736          & 0.265          & 0.716          & 0.280          & 0.732         \\
+Rap E30D/K31   & -0.052         & -0.115         & -0.016         & -0.036         & -0.050         & -0.111         & -0.046         & -0.096         & -0.100         & -0.215         & -0.051         & -0.107        \\
+Rap E30D/K31E  & 0.218          & 0.998          & 0.225          & 1.036          & 0.220          & 1.007          & 0.897          & 2.194          & 0.876          & 2.227          & 0.896          & 2.194         \\
+Ras D30E/E31K  & 0.126          & 1.083          & 0.132          & 1.215          & 0.128          & 1.104          & -0.036         & -0.160         & -0.062         & -0.290         & -0.037         & -0.167        \\
+Ras D30E/E31   & 0.612          & 13.794         & 0.574          & 13.904         & 0.609          & 13.779         & 0.432          & 7.564          & 0.426          & 7.953          & 0.431          & 7.576         \\
+Ras D30/E31K   & 0.311          & 1.345          & 0.382          & 1.547          & 0.316          & 1.367          & 0.171          & 0.842          & 0.129          & 0.679          & 0.169          & 0.835         \\
+Ras D30/E31    & 0.651          & 2.095          & 0.721          & 2.439          & 0.655          & 2.113          & 0.021          & 0.083          & 0.028          & 0.119          & 0.020          & 0.081         \\
+\hline
+All Points     & 0.016          & -4.906         & 0.034          & -2.205         & 0.018          & -4.477         & 0.202          & -0.563         & 0.182          & -0.585         & 0.200          & -0.565        \\
+\end{tabular}\\
+}\\
+{
+\begin{tabular}{ l || r r| r r| r r| r r}
+ & \multicolumn{2}{|C{2cm}}{APBS} & \multicolumn{2}{|C{2cm}}{APBS 5 \AA  Sphere} & \multicolumn{2}{|C{2cm}}{GROMACS TIP3P Reaction Field} & \multicolumn{2}{|C{2cm}}{Hybrid TI3P Reaction Field} \\
+ & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} & \multicolumn{1}{|C{1cm}}{R} & \multicolumn{1}{C{1cm}}{VSTR} \\
+\hline\hline
+Rap E30/K31    & -0.973         & -5.091         & -0.481         & -1.470         & 0.299          & 0.854          & -0.699         & -3.522        \\
+Rap E30/K31E   & -0.688         & -3.674         & -0.529         & -1.959         & -0.010         & -0.024         & -0.663         & -2.873        \\
+Rap E30D/K31   & -0.728         & -2.848         & -0.690         & -1.578         & -0.434         & -0.683         & -0.797         & -1.842        \\
+Rap E30D/K31E  & -0.387         & -1.951         & -0.177         & -0.518         & 0.789          & 1.611          & -0.328         & -0.701        \\
+Ras D30E/E31K  & -0.604         & -1.698         & -0.175         & -0.524         & 0.092          & 0.314          & -0.134         & -0.500        \\
+Ras D30E/E31   & 0.264          & 2.729          & 0.445          & 2.248          & 0.210          & 1.797          & -0.093         & -0.469        \\
+Ras D30/E31K   & -0.393         & -1.942         & 0.015          & 0.067          & 0.064          & 0.236          & -0.359         & -1.832        \\
+Ras D30/E31    & -0.265         & -0.886         & 0.136          & 0.301          & -0.288         & -0.597         & 0.098          & 0.361         \\
+\hline
+All Points     & -0.549         & 0.191          & -0.278         & 0.514          & 0.018          & -8.706         & -0.403         & 0.312         \\
+\end{tabular}\\
+}\\
+\end{document}
